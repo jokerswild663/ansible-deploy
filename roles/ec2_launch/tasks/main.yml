@@ -1,0 +1,15 @@
+---
+- name: Launch ec2 instance
+  sudo: false
+  local_action: 
+    module: ec2
+    key_name: "{{ ec2_launch_keyname }}"
+    aws_access_key: "{{ ec2_launch_aws_access_key }}"
+    aws_secret_key: "{{ ec2_launch_aws_secret_key }}"
+    group: "{{ ec2_launch_security_group }}"
+    image: "{{ ec2_launch_image_id }}"
+    state: present
+    wait: yes
+    wait_timeout: "{{ ec2_launch_wait_timeout }}"
+    zone: "{{ ec2_launch_zone }}"
+  tags: ec2_launch
