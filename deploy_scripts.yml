@@ -2,4 +2,4 @@
 - name: ec2_launch
   hosts: localhost
   roles: 
-    - testing
+    - ec2_launch

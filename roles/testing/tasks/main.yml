@@ -1,4 +1,4 @@
 ---
 - name: print test message
   sudo: false
-  debug: msg="Hello there"
+  debug: msg="Hello therek"
