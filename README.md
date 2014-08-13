@@ -1,7 +1,7 @@
 Instructions
 ------------
 
-1. Install ansible on host machine
+1. Install ansible and python boto library on host machine.  This can be done with pip.
 2. create .aws directory in home dir
 3. download .pem key file to $HOME/.aws/`<your key>`.pem
 4. Set the following environmental variables
