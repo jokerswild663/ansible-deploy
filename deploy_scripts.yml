@@ -1,5 +1,8 @@
 ---
 - name: ec2_launch
   hosts: localhost
+  vars: 
+    - ec2_launch_tags: '{ "name":"rhel - testing machine" }'
+  hosts: localhost
   roles: 
     - ec2_launch

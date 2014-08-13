@@ -7,6 +7,7 @@
     aws_access_key: "{{ ec2_launch_aws_access_key }}"
     aws_secret_key: "{{ ec2_launch_aws_secret_key }}"
     instance_type: "{{ ec2_launch_instance_type }}"
+    instance_tags: "{{ ec2_launch_tags }}"
     region: "{{ ec2_launch_region }}"
     group: "{{ ec2_launch_security_group }}"
     image: "{{ ec2_launch_image_id }}"
