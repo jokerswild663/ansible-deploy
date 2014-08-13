@@ -1,0 +1,10 @@
+---
+- name: install git
+  sudo: true
+  yum: name=git state=latest
+  tags: pre-reqs
+
+- name: install fping
+  sudo: true
+  yum: name=http://pkgs.repoforge.org/fping/fping-3.1-1.el6.rf.x86_64.rpm state=present
+  tags: pre-reqs
