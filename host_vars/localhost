@@ -1,6 +1,6 @@
 host_name: localhost
 
-ec2_launch_security_group: default
+ec2_launch_security_group: web
 ec2_launch_image_id: ami-b06a98d8
 ec2_launch_wait_timeout: 300
 ec2_launch_zone: us-east-1d
