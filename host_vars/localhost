@@ -1,0 +1,8 @@
+host_name: localhost
+
+ec2_launch_security_group: web
+ec2_launch_image_id: ami-b06a98d8
+ec2_launch_wait_timeout: 300
+ec2_launch_zone: us-east-1d
+ec2_launch_region: us-east-1
+ec2_launch_instance_type: t1.micro

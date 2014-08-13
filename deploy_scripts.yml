@@ -1,0 +1,16 @@
+---
+- name: ec2_launch
+  sudo: false
+  hosts: localhost
+  vars: 
+    - ec2_launch_tags: '{"Name":"rhel-testing machine"}'
+  hosts: localhost
+  roles: 
+    - ec2_launch
+
+- name: deploy scripts
+  sudo: false
+  hosts: ec2
+  roles: 
+    - pre-reqs
+    - diagnostic_scripts

@@ -1,0 +1,16 @@
+---
+- name: get scripts repository
+  sudo: true
+  git: repo=https://github.com/jokerswild663/unix-scripts
+       dest=/usr/local/bin
+  tags: diagnostic_scripts
+
+- name: set permissions on scripts
+  sudo: true
+  file: path=/usr/local/bin
+        group=root
+        owner=root
+        mode=755
+        recurse=yes
+        state=directory
+  tags: diagnostic_scripts
